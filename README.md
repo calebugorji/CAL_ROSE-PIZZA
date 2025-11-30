@@ -4,7 +4,7 @@
 
   ## Data Sources
   sale data: The primary dataset used for this analysis is the " pizza_sales csv " file containing detailed information about each sales made by the company.
-  https://github.com/calebugorji/CAL_ROSE-PIZZA/blob/main/pizza_sales.csv
+  ["https://github.com/calebugorji/CAL_ROSE-PIZZA/blob/main/pizza_sales.csv"]
 
   ## Tools
   - SQL Server - Data analysis
@@ -43,7 +43,8 @@
    select COUNT(*) * 1.0 / COUNT(distinct order_id) as Average_pizza_per_order
    from pizza_sales;
 
-  ## Dashboard 
+  ## Dashboard
+  https://github.com/calebugorji/CAL_ROSE-PIZZA/blob/main/Cal_Rose%20dashboard.png
 
   ## Result/Findings
   The analysis results are summarized as follows
