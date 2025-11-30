@@ -20,27 +20,28 @@
    include some interesting code/features worked with
    ```SQL
    select *
-from pizza_sales;
+   from pizza_sales;
 
-select COUNT(distinct order_id) as total_order
-from pizza_sales;
+   select COUNT(distinct order_id) as total_order
+   from pizza_sales;
 
-select SUM(total_price) / 1000 as total_revenue
-from pizza_sales;
+   select SUM(total_price) / 1000 as total_revenue
+   from pizza_sales;
 
-select SUM(quantity) as total_pizza_sold
-from pizza_sales;
+   select SUM(quantity) as total_pizza_sold
+   from pizza_sales;
 
-select SUM(order_total) / COUNT(*) as Average_order_value
-from (
+   select SUM(order_total) / COUNT(*) as Average_order_value
+   from (
    select order_id,
          SUM(quantity * unit_price) as order_total 
-  from pizza_sales
-  group by order_id 
-  ) as orders;
+   from pizza_sales
+   group by order_id 
+   ) as orders;
 
-  select COUNT(*) * 1.0 / COUNT(distinct order_id) as Average_pizza_per_order
-  from pizza_sales;
+   select COUNT(*) * 1.0 / COUNT(distinct order_id) as Average_pizza_per_order
+   from pizza_sales;
+  
 
   ## Result/Findings
   The analysis results are summarized as follows
